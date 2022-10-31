@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+  <body class="page">
+    <!-- Шапка сайту -->
+    <header class="header">
+      <div class="container header-container">
+        <nav class="navigation">
+          <a href="/" class="logo link"
+            ><span class="logo__accent">Web</span>Studio
+          </a>
+          <ul class="site-nav list">
+            <li class="site-nav__item">
+              <a href="./index.html" class="site-nav__link">Студія</a>
+            </li>
+            <li class="site-nav__item">
+              <a
+                href="./portfolio.html"
+                class="site-nav__link site-nav__link--current"
+                >Портфоліо</a
+              >
+            </li>
+            <li class="site-nav__item">
+              <a href="" class="site-nav__link">Контакти</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="contacts list">
+          <li class="contacts__item">
+            <a href="mailto:info@devstudio.com" class="contacts__link">
+              <svg
+                class="contacts__icon"
+                width="16px"
+                height="12px"
+                aria-label="envelope icon"
+              >
+                <use href="./images/icons.svg#envelope"></use>
+              </svg>
+              info@devstudio.com</a
+            >
+          </li>
+          <li class="contacts__item">
+            <a href="tel:+380961111111" class="contacts__link"
+              ><svg
+                class="contacts__icon"
+                width="10px"
+                height="16px"
+                aria-label="smartphone icon"
+              >
+                <use href="./images/icons.svg#smartphone"></use></svg
+              >+38 096 111 11 11</a
+            >
+          </li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <section class="section projects">
+        <div class="container">
+          <h1 class="visually-hidden">Приклади проектів</h1>
+          <!-- Кнопки фільтру -->
+          <ul class="button-list list">
+            <li>
+              <button type="button" class="button button-all">Усі</button>
+            </li>
+            <li>
+              <button type="button" class="button">Веб-сайти</button>
+            </li>
+            <li>
+              <button type="button" class="button">Додатки</button>
+            </li>
+            <li>
+              <button type="button" class="button">Дизайн</button>
+            </li>
+            <li>
+              <button type="button" class="button">Маркетинг</button>
+            </li>
+          </ul>
+
+          <ul class="projects-list list">
+            <li class="project-card">
+              <a href="" class="project-card__link link">
+                <div class="project-card__description">
+                  <img
+                    src="./images/imgtech.jpg"
+                    alt="Ноутбук з трьома анкетами на екрані"
+                    width="370"
+                    class="project-card__image"
+                  />
+                  <p class="project-card__text">
+                    Ресурс пропонує комплексні пропозиції з різним рівнем
+                    функціоналу та сервісів. Все це дозволить відвідувачу
+                    отримати вичерпні відомості про компанію чи приватну особу.
+                  </p>
+                </div>
+
+                <div class="project-card__bottom">
+                  <h2 class="project-card__title">Технокряк</h2>
+                  <p class="project-card__subtitle">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+            <li class="project-card">
+              <a href="" class="project-card__link link"
+                ><div class="project-card__description">
+                  <img
+                    src="./images/imgneworlean.jpg"
+                    alt="Двоє спортсменів грають в баскетбол"
+                    width="370"
+                    class="project-card__image"
+                  />
+                  <p class="project-card__text">
+                    Дорога в Карпатах. Сидить вуйко з кулеметом, направленим на
+                    дорогу. Біля нього зупиняється машина:<br />
+                    - Вуйку! Вас підвезти?<br />
+                    - Ні синку, я ще почекаю.<br />
+                    Зупиняється інша машина: <br />- Слава Ісу! <br />- Навіки
+                    слава! <br />- Вас підвезти, шановний? <br />- Ні синку, я
+                    ще почекаю. Щасливої дороги. <br />Наступна машина: <br />-
+                    Дєд, тєбя падбросить? <br />Вуйко, відтягуючи затвор:
+                    <br />- Ось я і дочекався.
+                  </p>
+                </div>
+
+                <div class="project-card__bottom">
+                  <h2 class="project-card__title">
+                    Постер New Orlean vs Golden Star
+                  </h2>
+                  <p class="project-card__subtitle">Дизайн</p>
+                </div></a
+              >
+            </li>
+            <li class="project-card">
+              <a href="" class="project-card__link link"
+                ><div class="project-card__description">
+                  <img
+                    src="./images/imgseafood.jpg"
+                    alt="Логотип ресторану"
+                    width="370"
+                    class="project-card__image"
+                  />
+                  <p class="project-card__text">
+                    -Шановний,не пийте воду з цього ставка,туди лайно з всього
+                    села стікає. <br />-Што ви гаварітє? Гаварітє па рускі,я вас
+                    нє панімаю. <br />-Я кажу двома руками черпай!
+                  </p>
+                </div>
+                <div class="project-card__bottom">
+                  <h2 class="project-card__title">Ресторан Seafood</h2>
+                  <p class="project-card__subtitle">Додаток</p>
+                </div></a
+              >
+            </li>
+            <li class="project-card">
+              <a href="" class="project-card__link link"
+                ><div class="project-card__description">
+                  <img
+                    src="./images/imgprime.jpg"
+                    alt="Чорні навушники"
+                    width="370"
+                    class="project-card__image"
+                  />
+                  <p class="project-card__text">
+                    Початок 90-х. Депутат вкотре просить дати слово...
+                    <br />Спікер Верховної ради Плющ: Шановний, я вам дав слово,
+                    але ви знову будете про москалів. <br />Депутат: Та ні, я
+                    тільки про екологію.<br />Плющ: Точно про екологію???
+                    <br />Депутат: та точно, точно про екологію! <br />Плющ дає
+                    слово депутату, регламент 1 хвилина. <br />Депутат: Люди
+                    добрі, що це навкруги робиться? Річки обміліли, ставки
+                    повисихали, ліси повирубали - нема де цього москаля ані
+                    повісити, ані втопити!!!
+                  </p>
+                </div>
+                <div class="project-card__bottom">
+                  <h2 class="project-card__title">Проєкт Prime</h2>
+                  <p class="project-card__subtitle">Маркетинг</p>
+                </div></a
+              >
+            </li>
+            <li class="project-card">
+              <a href="" class="project-card__link link"
+                ><div class="project-card__description">
+                  <img
+                    src="./images/imgboxes.jpg"
+                    alt="Дві коробки: біла і коричнева"
+                    width="370"
+                    class="project-card__image"
+                  />
+                  <p class="project-card__text">
+                    - Діду !
+                    <br />- Що! <br />- Чули, москалі у космос полетіли! <br />-
+                    Що всі? <br />- Та ні, тільки один! <br />- То чого ж ти
+                    тоді кричиш?...
+                  </p>
+                </div>
+                <div class="project-card__bottom">
+                  <h2 class="project-card__title">Проєкт Boxes</h2>
+                  <p class="project-card__subtitle">Додаток</p>
+                </div></a
+              >
+            </li>
+            <li class="project-card">
+              <a href="" class="project-card__link link"
+                ><div class="project-card__description">
+                  <img
+                    src="./images/imginspiration.jpg"
+                    alt="Монітор комп'ютера"
+                    width="370"
+                    class="project-card__image"
+                  />
+                  <p class="project-card__text">
+                    Прочитав тривожне повідомлення: Нацполіція шукає вбивцю
+                    росіян. Ось тепер думаю - може це вакансія?
+                  </p>
+                </div>
+                <div class="project-card__bottom">
+                  <h2 class="project-card__title">
+                    Inspiration has no Borders
+                  </h2>
+                  <p class="project-card__subtitle">Веб-сайт</p>
+                </div></a
+              >
+            </li>
+            <li class="project-card">
+              <a href="" class="project-card__link link"
+                ><div class="project-card__description">
+                  <img
+                    src="./images/imglimited.jpg"
+                    alt="Розгорнутий журнал"
+                    width="370"
+                    class="project-card__image"
+                  />
+                  <p class="project-card__text">
+                    -Яка різниці між москалем та цибулею? - Коли ріжеш цибулю -
+                    плачеш.
+                  </p>
+                </div>
+                <div class="project-card__bottom">
+                  <h2 class="project-card__title">Видання Limited Edition</h2>
+                  <p class="project-card__subtitle">Дизайн</p>
+                </div></a
+              >
+            </li>
+            <li class="project-card">
+              <a href="" class="project-card__link link"
+                ><div class="project-card__description">
+                  <img
+                    src="./images/imglab.jpg"
+                    alt="Бірка з написом Lab el tag"
+                    width="370"
+                    class="project-card__image"
+                  />
+                  <p class="project-card__text">
+                    Як вступити в вашу організацію? - Треба вбити 8 москалів і
+                    одного кота... - А кота за що? - Ви прийняті!
+                  </p>
+                </div>
+                <div class="project-card__bottom">
+                  <h2 class="project-card__title">Проєкт LAB</h2>
+                  <p class="project-card__subtitle">Маркетинг</p>
+                </div></a
+              >
+            </li>
+            <li class="project-card">
+              <a href="" class="project-card__link link"
+                ><div class="project-card__description">
+                  <img
+                    src="./images/imgbusiness.jpg"
+                    alt="Хтось друкує на ноутбуці"
+                    width="370"
+                    class="project-card__image"
+                  />
+                  <p class="project-card__text">
+                    Криївка партизанів. Старшина, перекладач і полонений
+                    "стрибок".
+                    <br />- Cпитай москаля, де розташована їхня частина. <br />-
+                    Руководитель спрашивает вас, где расположена ваша часть.
+                    <br />- Я не скажу! <br />- Москаль відповів, що не скаже.
+                    <br />- То скажи, що зараз ми його катуватимемо. <br />- То
+                    клич хлопців із жаровенькою й цвяшками. <br />[…] <br />- А
+                    что это они внесли? <br />- Это жаровня. Сечас в ней
+                    раскалят гвозди и загонят их вам под ногти. <br />- Нет,
+                    нет! Скажите вашему начальнику, что я все расскажу! <br />-
+                    Що там москаль белькоче? <br />- Каже, що москалі тортур не
+                    бояться.
+                  </p>
+                </div>
+                <div class="project-card__bottom">
+                  <h2 class="project-card__title">Growing Business</h2>
+                  <p class="project-card__subtitle">Додаток</p>
+                </div></a
+              >
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container footer-container">
+        <div class="footer-contacts">
+          <a href="/" class="logo footer__logo link"
+            ><span class="logo__accent">Web</span>Studio
+          </a>
+          <address class="footer-contacts__list">
+            <ul class="list">
+              <li>
+                <a
+                  href="https://goo.gl/maps/kmzCdjqD1Y1qGuR56"
+                  class="footer-contacts__address link"
+                  >м. Київ, пр-т Лесі Українки, 26</a
+                >
+              </li>
+              <li class="footer-contacts__details">
+                <a
+                  href="mailto:info@devstudio.com"
+                  class="footer-contacts__link"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li class="footer-contacts__details">
+                <a href="tel:+380961111111" class="footer-contacts__link"
+                  >+38 096 111 11 11</a
+                >
+              </li>
+            </ul>
+          </address>
+        </div>
+        <div class="footer-social">
+          <p class="footer-social__join">приєднуйтесь</p>
+          <ul class="social-list list">
+            <li>
+              <a
+                href="https://www.instagram.com/reel/CiNuIXJK9c2/?igshid=MDJmNzVkMjY="
+                class="social-list__link social-list__link--theme-black"
+              >
+                <svg
+                  class="social-list__icon social-list__icon--theme-black"
+                  width="20px"
+                  height="20px"
+                  aria-label="instagram icon"
+                >
+                  <use href="./images/icons.svg#instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://twitter.com/narik_aliev/status/1580271273154088961?t=h1B4kh4Cckt_f39rNes0pg&s=19"
+                class="social-list__link social-list__link--theme-black"
+              >
+                <svg
+                  class="social-list__icon social-list__icon--theme-black"
+                  width="20px"
+                  height="20px"
+                  aria-label="twitter icon"
+                >
+                  <use href="./images/icons.svg#twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://m.facebook.com/story.php?story_fbid=pfbid0i3GLEoEnbGa5veNkAZwb8phAN2K2F2kqnucc8ArQtwpkTTEEUkhczSsixQj2YfxQl&id=100063494801219"
+                class="social-list__link social-list__link--theme-black"
+              >
+                <svg
+                  class="social-list__icon social-list__icon--theme-black"
+                  width="20px"
+                  height="20px"
+                  aria-label="facebook icon"
+                >
+                  <use href="./images/icons.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+                class="social-list__link social-list__link--theme-black"
+              >
+                <svg
+                  class="social-list__icon social-list__icon--theme-black"
+                  width="20px"
+                  height="20px"
+                  aria-label="linkedin icon"
+                >
+                  <use href="./images/icons.svg#linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-subscribe">
+          <p class="footer-subscribe__join">Підпишіться на розсилку</p>
+          <form class="subscribe-form">
+            <label>
+              <input
+                class="subscribe-form__input"
+                type="email"
+                name="user-email"
+                placeholder="E-mail"
+                required
+              />
+            </label>
+            <button type="submit" class="subscribe-form__button">
+              <span>Підписатися</span>
+              <svg
+                class="subscribe-form__icon"
+                width="24px"
+                height="24px"
+                aria-label="person icon"
+              >
+                <use href="./images/icons.svg#iconsend"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
