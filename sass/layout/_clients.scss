@@ -10,7 +10,7 @@
 }
 
 .clients-list__item {
-  width: 210px;
+  width: calc(50% - 15px);
   height: 92px;
 
   @media screen and (min-width: 768px) {
