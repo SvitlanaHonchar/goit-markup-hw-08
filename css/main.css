@@ -932,6 +932,13 @@ a {
   text-align: center;
   width: 100%;
 }
+@media screen and (min-width: 768px) {
+  .footer-contacts {
+    margin-bottom: 0;
+    flex-grow: 0.5;
+    width: 50%;
+  }
+}
 @media screen and (min-width: 1200px) {
   .footer-contacts {
     margin-right: 70px;
@@ -946,6 +953,13 @@ a {
   text-align: center;
   width: 100%;
 }
+@media screen and (min-width: 768px) {
+  .footer-social {
+    margin-bottom: 0;
+    flex-grow: 0.5;
+    width: 50%;
+  }
+}
 @media screen and (min-width: 1200px) {
   .footer-social {
     margin-right: 93px;
@@ -954,11 +968,18 @@ a {
   }
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer-container {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
 @media screen and (min-width: 1200px) {
   .footer-container {
+    display: flex;
     align-items: baseline;
-    flex-wrap: wrap;
-    justify-content: center;
   }
 }
 
@@ -1012,6 +1033,17 @@ a {
   color: var(--secondary-accent-color-light);
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer-subscribe {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 60px;
+    flex-grow: 1;
+    max-width: 450px;
+    align-self: center;
+  }
+}
+
 .footer-subscribe__join {
   margin-bottom: 20px;
   font-family: "Roboto", sans-serif;
@@ -1027,7 +1059,7 @@ a {
 @media screen and (min-width: 1200px) {
   .footer-subscribe__join {
     margin-right: 93px;
-    margin-bottom: 0;
+    margin-bottom: 20px;
     text-align: left;
   }
 }
@@ -1063,6 +1095,7 @@ a {
   .subscribe-form__input {
     padding-left: 16px;
     min-width: 358px;
+    margin-bottom: 0;
   }
 }
 
