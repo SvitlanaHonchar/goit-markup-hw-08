@@ -9,15 +9,25 @@
     justify-content: space-between;
     gap: 30px;
   }
+
+  @media screen and (min-width: 1200px) {
+    flex-wrap: nowrap;
+  }
 }
 
 .advantages-list__item {
   @media screen and (min-width: 768px) {
-    width: 354px;
+    max-width: 354px;
   }
 
   @media screen and (min-width: 1200px) {
-    width: 270px;
+    max-width: 270px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .advantages-list__item:not(:last-child) {
+    margin-bottom: 30px;
   }
 }
 
