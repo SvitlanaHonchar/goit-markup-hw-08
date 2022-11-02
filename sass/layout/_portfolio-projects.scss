@@ -9,11 +9,27 @@
 }
 
 .projects-list {
-  display: flex;
-  flex-wrap: wrap;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
 
-  gap: 30px;
-  justify-content: space-between;
+    gap: 30px;
+    justify-content: space-between;
+  }
+}
+
+.project-card {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: 354px;
+  }
+}
+
+.project-card:not(:last-child) {
+  margin-bottom: 30px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0;
+  }
 }
 
 .project-card__link {
@@ -29,10 +45,17 @@
 
     cursor: pointer;
   }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+  }
 }
 
 .project-card__image {
   display: block;
+  width: 100%;
 }
 
 .project-card__bottom {
@@ -41,6 +64,10 @@
   border-bottom: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    flex-grow: 1;
+  }
 }
 
 .project-card__subtitle {
@@ -98,10 +125,18 @@
 
 .button-list {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
   column-gap: 8px;
+  row-gap: 15px;
 
   margin-bottom: 50px;
+
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+    column-gap: 8px;
+    flex-wrap: wrap;
+  }
 }
 
 .button {

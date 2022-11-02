@@ -19,10 +19,10 @@
     <!-- Шапка сайту -->
     <header class="header">
       <div class="container header-container">
+        <a href="/" class="logo link"
+          ><span class="logo__accent">Web</span>Studio
+        </a>
         <nav class="navigation">
-          <a href="/" class="logo link"
-            ><span class="logo__accent">Web</span>Studio
-          </a>
           <ul class="site-nav list">
             <li class="site-nav__item">
               <a href="./index.html" class="site-nav__link">Студія</a>
@@ -40,32 +40,49 @@
           </ul>
         </nav>
         <ul class="contacts list">
-          <li class="contacts__item">
-            <a href="mailto:info@devstudio.com" class="contacts__link">
-              <svg
-                class="contacts__icon"
-                width="16px"
-                height="12px"
-                aria-label="envelope icon"
+          <div class="contacts__container">
+            <li class="contacts__item">
+              <a href="mailto:info@devstudio.com" class="contacts__link">
+                <svg
+                  class="contacts__icon"
+                  width="16px"
+                  height="12px"
+                  aria-label="envelope icon"
+                >
+                  <use href="./images/icons.svg#envelope"></use>
+                </svg>
+                info@devstudio.com</a
               >
-                <use href="./images/icons.svg#envelope"></use>
-              </svg>
-              info@devstudio.com</a
-            >
-          </li>
-          <li class="contacts__item">
-            <a href="tel:+380961111111" class="contacts__link"
-              ><svg
-                class="contacts__icon"
-                width="10px"
-                height="16px"
-                aria-label="smartphone icon"
+            </li>
+            <li class="contacts__item">
+              <a href="tel:+380961111111" class="contacts__link"
+                ><svg
+                  class="contacts__icon"
+                  width="10px"
+                  height="16px"
+                  aria-label="smartphone icon"
+                >
+                  <use href="./images/icons.svg#smartphone"></use></svg
+                >+38 096 111 11 11</a
               >
-                <use href="./images/icons.svg#smartphone"></use></svg
-              >+38 096 111 11 11</a
-            >
-          </li>
+            </li>
+          </div>
         </ul>
+        <!-- mobile ver. button -->
+        <button type="button" class="menu-button is-open">
+          <svg width="40" height="40" aria-label="menu icon">
+            <use
+              class="menu-button__icon-menu"
+              href="./images/icons.svg#menu"
+            ></use>
+            <use
+              class="menu-button__icon-cross"
+              href="./images/icons.svg#closemenu"
+            ></use>
+          </svg>
+        </button>
+
+        <!-- /mobile ver. button -->
       </div>
     </header>
     <main>
@@ -418,17 +435,19 @@
                 required
               />
             </label>
-            <button type="submit" class="subscribe-form__button">
-              <span>Підписатися</span>
-              <svg
-                class="subscribe-form__icon"
-                width="24px"
-                height="24px"
-                aria-label="person icon"
-              >
-                <use href="./images/icons.svg#iconsend"></use>
-              </svg>
-            </button>
+            <div class="subscribe-form__container">
+              <button type="submit" class="subscribe-form__button">
+                <span>Підписатися</span>
+                <svg
+                  class="subscribe-form__icon"
+                  width="24px"
+                  height="24px"
+                  aria-label="person icon"
+                >
+                  <use href="./images/icons.svg#iconsend"></use>
+                </svg>
+              </button>
+            </div>
           </form>
         </div>
       </div>
