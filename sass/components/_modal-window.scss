@@ -24,8 +24,8 @@
   transform: translate(-50%, -50%);
   padding: 40px;
 
-  min-width: 528px;
-  min-height: 581px;
+  min-width: 450px;
+  min-height: 609px;
 
   background-color: #fff;
   opacity: 1;
@@ -36,6 +36,11 @@
   .backdrop.is-hidden & {
     transform: translate(-50%, 100%);
     opacity: 0;
+  }
+
+  @media screen and (min-width: 1200px) {
+    min-width: 528px;
+    min-height: 581px;
   }
 }
 
@@ -164,11 +169,15 @@
 
   &::placeholder {
     font-family: "Roboto", sans-serif;
-    font-size: 12px;
+    font-size: 14px;
     line-height: 1.167em;
     letter-spacing: 0.01em;
 
     color: rgba(117, 117, 117, 0.5);
+
+    @media screen and (min-width: 1200px) {
+      font-size: 12px;
+    }
   }
 
   &:focus {
@@ -185,10 +194,14 @@
 
   margin-bottom: 30px;
 
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.71em;
 
   letter-spacing: 0.03em;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+  }
 }
 
 .field-conditions__link {
