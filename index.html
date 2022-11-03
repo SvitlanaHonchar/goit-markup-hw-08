@@ -180,30 +180,52 @@
           <h2 class="section__title">Чим ми займаємося</h2>
           <ul class="work-list list">
             <li class="work-list__item">
-              <img
-                src="./images/imgfirst.jpg"
-                alt="A person writes code on a laptop"
-                width="370"
-                class="work-list__img"
-              />
+              <picture>
+                <source
+                  srcset="./images/imgfirst.jpg 1x, ./images/imgfirst@2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <img
+                  src="./images/imgfirst.jpg"
+                  alt="A person writes code on a laptop"
+                  width="370"
+                  class="work-list__img"
+                />
+              </picture>
+
               <div class="work-list__description"><p>Десктопні додатки</p></div>
             </li>
             <li class="work-list__item">
-              <img
-                src="./images/imgsecond.jpg"
-                alt="A person checks their phone and laptop"
-                width="370"
-                class="work-list__img"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/imgsecond.jpg    1x,
+                    ./images/imgsecond@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <img
+                  src="./images/imgsecond.jpg"
+                  alt="A person writes code on a laptop"
+                  width="370"
+                  class="work-list__img"
+                />
+              </picture>
               <div class="work-list__description"><p>Мобільні додатки</p></div>
             </li>
             <li class="work-list__item">
-              <img
-                src="./images/imgthird.jpg"
-                alt="Color scheme on the tablet"
-                width="370"
-                class="work-list__img"
-              />
+              <picture>
+                <source
+                  srcset="./images/imgthird.jpg 1x, ./images/imgthird@2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <img
+                  src="./images/imgthird.jpg"
+                  alt="A person writes code on a laptop"
+                  width="370"
+                  class="work-list__img"
+                />
+              </picture>
               <div class="work-list__description">
                 <p>Дизайнерські рішення</p>
               </div>
@@ -217,12 +239,62 @@
           <h2 class="section__title">Наша команда</h2>
           <ul class="team-list list">
             <li class="team-list__item">
-              <img
-                src="./images/imgihor.jpg"
-                alt="Man in brown shirt"
-                width="270"
-                class="team-list__image"
-              />
+              <picture>
+                <!-- Desktop -->
+                <source
+                  srcset="
+                    ./images/team/imgihordesktop.webp    1x,
+                    ./images/team/imgihordesktop@2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/team/imgihordesktop.jpg    1x,
+                    ./images/team/imgihordesktop@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <!-- Tablet -->
+                <source
+                  srcset="
+                    ./images/team/imgihortablet.webp    1x,
+                    ./images/team/imgihortablet@2x.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/team/imgihortablet.jpg    1x,
+                    ./images/team/imgihortablet@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <!-- Mobile -->
+                <source
+                  srcset="
+                    ./images/team/imgihormobile.webp    1x,
+                    ./images/team/imgihormobile@2x.webp 2x
+                  "
+                  media="(min-width: 280px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/team/imgihormobile.jpg    1x,
+                    ./images/team/imgihormobile@2x.jpg 2x
+                  "
+                  media="(min-width: 280px)"
+                />
+                <img
+                  src="./images/team/imgihormobile.jpg"
+                  alt="Man in brown shirt"
+                  class="team-list__image"
+                />
+              </picture>
+
               <div class="team-list__thumb">
                 <h3 class="team-list__title">Ігор Дем'яненко</h3>
                 <p class="team-list__descr">Product Designer</p>
@@ -291,12 +363,61 @@
               </div>
             </li>
             <li class="team-list__item">
-              <img
-                src="./images/imgolha.jpg"
-                alt="Woman in black jacket"
-                width="270"
-                class="team-list__image"
-              />
+              <picture>
+                <!-- Desktop -->
+                <source
+                  srcset="
+                    ./images/team/imgolhadesktop.webp    1x,
+                    ./images/team/imgolhadesktop@2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/team/imgolhadesktop.jpg    1x,
+                    ./images/team/imgolhadesktop@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <!-- Tablet -->
+                <source
+                  srcset="
+                    ./images/team/imgolhatablet.webp    1x,
+                    ./images/team/imgolhatablet@2x.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/team/imgolhatablet.jpg    1x,
+                    ./images/team/imgolhatablet@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <!-- Mobile -->
+                <source
+                  srcset="
+                    ./images/team/imgolhamobile.webp    1x,
+                    ./images/team/imgolhamobile@2x.webp 2x
+                  "
+                  media="(min-width: 280px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/team/imgolhamobile.jpg    1x,
+                    ./images/team/imgolhamobile@2x.jpg 2x
+                  "
+                  media="(min-width: 280px)"
+                />
+                <img
+                  src="./images/team/imgolhamobile.jpg"
+                  alt="Man in brown shirt"
+                  class="team-list__image"
+                />
+              </picture>
               <div class="team-list__thumb">
                 <h3 class="team-list__title">Ольга Рєпіна</h3>
                 <p class="team-list__descr">Frontend Developer</p>
@@ -365,12 +486,61 @@
               </div>
             </li>
             <li class="team-list__item">
-              <img
-                src="./images/imgmykola.jpg"
-                alt="Man in gray shirt"
-                width="270"
-                class="team-list__image"
-              />
+              <picture>
+                <!-- Desktop -->
+                <source
+                  srcset="
+                    ./images/team/imgmykoladesktop.webp    1x,
+                    ./images/team/imgmykoladesktop@2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/team/imgmykoladesktop.jpg    1x,
+                    ./images/team/imgmykoladesktop@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <!-- Tablet -->
+                <source
+                  srcset="
+                    ./images/team/imgmykolatablet.webp    1x,
+                    ./images/team/imgmykolatablet@2x.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/team/imgmykolatablet.jpg    1x,
+                    ./images/team/imgmykolatablet@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <!-- Mobile -->
+                <source
+                  srcset="
+                    ./images/team/imgmykolamobile.webp    1x,
+                    ./images/team/imgmykolamobile@2x.webp 2x
+                  "
+                  media="(min-width: 280px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/team/imgmykolamobile.jpg    1x,
+                    ./images/team/imgmykolamobile@2x.jpg 2x
+                  "
+                  media="(min-width: 280px)"
+                />
+                <img
+                  src="./images/team/imgmykolamobile.jpg"
+                  alt="Man in brown shirt"
+                  class="team-list__image"
+                />
+              </picture>
               <div class="team-list__thumb">
                 <h3 class="team-list__title">Микола Тарасов</h3>
                 <p class="team-list__descr">Marketing</p>
@@ -439,12 +609,61 @@
               </div>
             </li>
             <li class="team-list__item">
-              <img
-                src="./images/imgmykhaylo.jpg"
-                alt="Man in black t-shirt"
-                width="270"
-                class="team-list__image"
-              />
+              <picture>
+                <!-- Desktop -->
+                <source
+                  srcset="
+                    ./images/team/imgmykhaylodesktop.webp    1x,
+                    ./images/team/imgmykhaylodesktop@2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/team/imgmykhaylodesktop.jpg    1x,
+                    ./images/team/imgmykhaylodesktop@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <!-- Tablet -->
+                <source
+                  srcset="
+                    ./images/team/imgmykhaylotablet.webp    1x,
+                    ./images/team/imgmykhaylotablet@2x.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/team/imgmykhaylotablet.jpg    1x,
+                    ./images/team/imgmykhaylotablet@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <!-- Mobile -->
+                <source
+                  srcset="
+                    ./images/team/imgmykhaylomobile.webp    1x,
+                    ./images/team/imgmykhaylomobile@2x.webp 2x
+                  "
+                  media="(min-width: 280px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/team/imgmykhaylomobile.jpg    1x,
+                    ./images/team/imgmykhaylomobile@2x.jpg 2x
+                  "
+                  media="(min-width: 280px)"
+                />
+                <img
+                  src="./images/team/imgmykhaylomobile.jpg"
+                  alt="Man in brown shirt"
+                  class="team-list__image"
+                />
+              </picture>
               <div class="team-list__thumb">
                 <h3 class="team-list__title">Михайло Єрмаков</h3>
                 <p class="team-list__descr">UI Designer</p>
