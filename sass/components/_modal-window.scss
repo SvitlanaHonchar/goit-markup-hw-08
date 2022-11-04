@@ -24,8 +24,8 @@
   transform: translate(-50%, -50%);
   padding: 40px;
 
-  min-width: 450px;
-  min-height: 609px;
+  // min-width: 450px;
+  // min-height: 609px;
 
   background-color: #fff;
   opacity: 1;
@@ -36,6 +36,10 @@
   .backdrop.is-hidden & {
     transform: translate(-50%, 100%);
     opacity: 0;
+  }
+  @media screen and (min-width: 480px) and (max-width: 1199px) {
+    min-width: 450px;
+    min-height: 609px;
   }
 
   @media screen and (min-width: 1200px) {
@@ -206,6 +210,7 @@
 
 .field-conditions__link {
   color: var(--accent-color);
+  text-decoration: underline;
 }
 
 .field-conditions__checkbox {

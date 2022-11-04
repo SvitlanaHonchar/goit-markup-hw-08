@@ -129,5 +129,24 @@
 
 .contacts__icon {
   margin-right: 10px;
+
   fill: currentColor;
+}
+
+.contacts__icon--email-size {
+  width: 14px;
+  height: 10px;
+  @media screen and (min-width: 1200px) {
+    width: 16px;
+    height: 12px;
+  }
+}
+
+.contacts__icon--phone-size {
+  width: 10px;
+  height: 14px;
+  @media screen and (min-width: 1200px) {
+    width: 10px;
+    height: 16px;
+  }
 }
