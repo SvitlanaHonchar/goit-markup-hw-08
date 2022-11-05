@@ -40,33 +40,33 @@
           </ul>
         </nav>
         <ul class="contacts list">
-          <div class="contacts__container">
-            <li class="contacts__item">
-              <a href="mailto:info@devstudio.com" class="contacts__link">
-                <svg
-                  class="contacts__icon contacts__icon--email-size"
-                  width="16px"
-                  height="12px"
-                  aria-label="envelope icon"
-                >
-                  <use href="./images/icons.svg#envelope"></use>
-                </svg>
-                info@devstudio.com</a
+          <!-- <div class="contacts__container"> -->
+          <li class="contacts__item">
+            <a href="mailto:info@devstudio.com" class="contacts__link">
+              <svg
+                class="contacts__icon contacts__icon--email-size"
+                width="16px"
+                height="12px"
+                aria-label="envelope icon"
               >
-            </li>
-            <li class="contacts__item">
-              <a href="tel:+380961111111" class="contacts__link"
-                ><svg
-                  class="contacts__icon contacts__icon--phone-size"
-                  width="10px"
-                  height="16px"
-                  aria-label="smartphone icon"
-                >
-                  <use href="./images/icons.svg#smartphone"></use></svg
-                >+38 096 111 11 11</a
+                <use href="./images/icons.svg#envelope"></use>
+              </svg>
+              info@devstudio.com</a
+            >
+          </li>
+          <li class="contacts__item">
+            <a href="tel:+380961111111" class="contacts__link"
+              ><svg
+                class="contacts__icon contacts__icon--phone-size"
+                width="10px"
+                height="16px"
+                aria-label="smartphone icon"
               >
-            </li>
-          </div>
+                <use href="./images/icons.svg#smartphone"></use></svg
+              >+38 096 111 11 11</a
+            >
+          </li>
+          <!-- </div> -->
         </ul>
         <!-- mobile ver. button -->
         <button type="button" class="mobile-menu-button" data-menu-open>
@@ -160,12 +160,36 @@
             <li class="project-card">
               <a href="" class="project-card__link link">
                 <div class="project-card__description">
-                  <img
-                    src="./images/imgtech.jpg"
-                    alt="Ноутбук з трьома анкетами на екрані"
-                    width="370"
-                    class="project-card__image"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/imgtechdesktop.jpg    1x,
+                        ./images/portfolio/imgtechdesktop@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/imgtechtablet.jpg    1x,
+                        ./images/portfolio/imgtechtablet@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/imgtech.jpg    1x,
+                        ./images/portfolio/imgtech@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <img
+                      src="./images/portfolio/imgtech.jpg"
+                      alt="Ноутбук з трьома анкетами на екрані"
+                      width="370"
+                      class="project-card__image"
+                    />
+                  </picture>
+
                   <p class="project-card__text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -182,12 +206,36 @@
             <li class="project-card">
               <a href="" class="project-card__link link"
                 ><div class="project-card__description">
-                  <img
-                    src="./images/imgneworlean.jpg"
-                    alt="Двоє спортсменів грають в баскетбол"
-                    width="370"
-                    class="project-card__image"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/imgneworleandesktop.jpg    1x,
+                        ./images/portfolio/imgneworleandesktop@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/imgneworleantablet.jpg    1x,
+                        ./images/portfolio/imgneworleantablet@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/imgneworlean.jpg    1x,
+                        ./images/portfolio/imgneworlean@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <img
+                      src="./images/portfolio/imgneworlean.jpg"
+                      alt="Двоє спортсменів грають в баскетбол"
+                      width="370"
+                      class="project-card__image"
+                    />
+                  </picture>
+
                   <p class="project-card__text">
                     Дорога в Карпатах. Сидить вуйко з кулеметом, направленим на
                     дорогу. Біля нього зупиняється машина:<br />
@@ -212,12 +260,36 @@
             <li class="project-card">
               <a href="" class="project-card__link link"
                 ><div class="project-card__description">
-                  <img
-                    src="./images/imgseafood.jpg"
-                    alt="Логотип ресторану"
-                    width="370"
-                    class="project-card__image"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/imgseafooddesktop.jpg    1x,
+                        ./images/portfolio/imgseafooddesktop@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/imgseafoodtablet.jpg    1x,
+                        ./images/portfolio/imgseafoodtablet@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/imgseafood.jpg    1x,
+                        ./images/portfolio/imgseafood@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <img
+                      src="./images/portfolio/imgseafood.jpg"
+                      alt="Логотип ресторану"
+                      width="370"
+                      class="project-card__image"
+                    />
+                  </picture>
+
                   <p class="project-card__text">
                     -Шановний,не пийте воду з цього ставка,туди лайно з всього
                     села стікає. <br />-Што ви гаварітє? Гаварітє па рускі,я вас
@@ -233,12 +305,36 @@
             <li class="project-card">
               <a href="" class="project-card__link link"
                 ><div class="project-card__description">
-                  <img
-                    src="./images/imgprime.jpg"
-                    alt="Чорні навушники"
-                    width="370"
-                    class="project-card__image"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/imgprimedesktop.jpg    1x,
+                        ./images/portfolio/imgprimedesktop@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/imgprimetablet.jpg    1x,
+                        ./images/portfolio/imgprimetablet@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/imgprime.jpg    1x,
+                        ./images/portfolio/imgprime@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <img
+                      src="./images/portfolio/imgprime.jpg"
+                      alt="Чорні навушники"
+                      width="370"
+                      class="project-card__image"
+                    />
+                  </picture>
+
                   <p class="project-card__text">
                     Початок 90-х. Депутат вкотре просить дати слово...
                     <br />Спікер Верховної ради Плющ: Шановний, я вам дав слово,
@@ -260,12 +356,36 @@
             <li class="project-card">
               <a href="" class="project-card__link link"
                 ><div class="project-card__description">
-                  <img
-                    src="./images/imgboxes.jpg"
-                    alt="Дві коробки: біла і коричнева"
-                    width="370"
-                    class="project-card__image"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/imgboxesdesktop.jpg    1x,
+                        ./images/portfolio/imgboxesdesktop@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/imgboxestablet.jpg    1x,
+                        ./images/portfolio/imgboxestablet@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/imgboxes.jpg    1x,
+                        ./images/portfolio/imgboxes@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <img
+                      src="./images/portfolio/imgboxes.jpg"
+                      alt="Дві коробки: біла і коричнева"
+                      width="370"
+                      class="project-card__image"
+                    />
+                  </picture>
+
                   <p class="project-card__text">
                     - Діду !
                     <br />- Що! <br />- Чули, москалі у космос полетіли! <br />-
@@ -282,12 +402,36 @@
             <li class="project-card">
               <a href="" class="project-card__link link"
                 ><div class="project-card__description">
-                  <img
-                    src="./images/imginspiration.jpg"
-                    alt="Монітор комп'ютера"
-                    width="370"
-                    class="project-card__image"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/imginspirationtdesktop.jpg    1x,
+                        ./images/portfolio/imginspirationtdesktop@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/imginspirationtablet.jpg    1x,
+                        ./images/portfolio/imginspirationtablet@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/imginspiration.jpg    1x,
+                        ./images/portfolio/imginspiration@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <img
+                      src="./images/portfolio/imginspiration.jpg"
+                      alt="Монітор комп'ютера"
+                      width="370"
+                      class="project-card__image"
+                    />
+                  </picture>
+
                   <p class="project-card__text">
                     Прочитав тривожне повідомлення: Нацполіція шукає вбивцю
                     росіян. Ось тепер думаю - може це вакансія?
@@ -304,12 +448,36 @@
             <li class="project-card">
               <a href="" class="project-card__link link"
                 ><div class="project-card__description">
-                  <img
-                    src="./images/imglimited.jpg"
-                    alt="Розгорнутий журнал"
-                    width="370"
-                    class="project-card__image"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/imglimiteddesktop.jpg    1x,
+                        ./images/portfolio/imglimiteddesktop@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/imglimitedtablet.jpg    1x,
+                        ./images/portfolio/imglimitedtablet@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/imglimited.jpg    1x,
+                        ./images/portfolio/imglimited@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <img
+                      src="./images/portfolio/imglimited.jpg"
+                      alt="Розгорнутий журнал"
+                      width="370"
+                      class="project-card__image"
+                    />
+                  </picture>
+
                   <p class="project-card__text">
                     -Яка різниці між москалем та цибулею? - Коли ріжеш цибулю -
                     плачеш.
@@ -324,12 +492,36 @@
             <li class="project-card">
               <a href="" class="project-card__link link"
                 ><div class="project-card__description">
-                  <img
-                    src="./images/imglab.jpg"
-                    alt="Бірка з написом Lab el tag"
-                    width="370"
-                    class="project-card__image"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/imglabdesktop.jpg    1x,
+                        ./images/portfolio/imglabdesktop@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/imglabtablet.jpg    1x,
+                        ./images/portfolio/imglabtablet@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/imglab.jpg    1x,
+                        ./images/portfolio/imglab@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <img
+                      src="./images/portfolio/imglab.jpg"
+                      alt="Бірка з написом Lab el tag"
+                      width="370"
+                      class="project-card__image"
+                    />
+                  </picture>
+
                   <p class="project-card__text">
                     Як вступити в вашу організацію? - Треба вбити 8 москалів і
                     одного кота... - А кота за що? - Ви прийняті!
@@ -344,12 +536,36 @@
             <li class="project-card">
               <a href="" class="project-card__link link"
                 ><div class="project-card__description">
-                  <img
-                    src="./images/imgbusiness.jpg"
-                    alt="Хтось друкує на ноутбуці"
-                    width="370"
-                    class="project-card__image"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/imgbusinessdesktop.jpg    1x,
+                        ./images/portfolio/imgbusinessdesktop@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/imgbusinesstablet.jpg    1x,
+                        ./images/portfolio/imgbusinesstablet@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/imgbusiness.jpg    1x,
+                        ./images/portfolio/imgbusiness@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <img
+                      src="./images/portfolio/imgbusiness.jpg"
+                      alt="Хтось друкує на ноутбуці"
+                      width="370"
+                      class="project-card__image"
+                    />
+                  </picture>
+
                   <p class="project-card__text">
                     Криївка партизанів. Старшина, перекладач і полонений
                     "стрибок".
