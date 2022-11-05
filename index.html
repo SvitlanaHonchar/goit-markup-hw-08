@@ -40,33 +40,33 @@
           </ul>
         </nav>
         <ul class="contacts list">
-          <div class="contacts__container">
-            <li class="contacts__item">
-              <a href="mailto:info@devstudio.com" class="contacts__link">
-                <svg
-                  class="contacts__icon contacts__icon--email-size"
-                  width="16px"
-                  height="12px"
-                  aria-label="envelope icon"
-                >
-                  <use href="./images/icons.svg#envelope"></use>
-                </svg>
-                info@devstudio.com</a
+          <!-- <div class="contacts__container"> -->
+          <li class="contacts__item">
+            <a href="mailto:info@devstudio.com" class="contacts__link">
+              <svg
+                class="contacts__icon contacts__icon--email-size"
+                width="16px"
+                height="12px"
+                aria-label="envelope icon"
               >
-            </li>
-            <li class="contacts__item">
-              <a href="tel:+380961111111" class="contacts__link"
-                ><svg
-                  class="contacts__icon contacts__icon--phone-size"
-                  width="10px"
-                  height="16px"
-                  aria-label="smartphone icon"
-                >
-                  <use href="./images/icons.svg#smartphone"></use></svg
-                >+38 096 111 11 11</a
+                <use href="./images/icons.svg#envelope"></use>
+              </svg>
+              info@devstudio.com</a
+            >
+          </li>
+          <li class="contacts__item">
+            <a href="tel:+380961111111" class="contacts__link"
+              ><svg
+                class="contacts__icon contacts__icon--phone-size"
+                width="10px"
+                height="16px"
+                aria-label="smartphone icon"
               >
-            </li>
-          </div>
+                <use href="./images/icons.svg#smartphone"></use></svg
+              >+38 096 111 11 11</a
+            >
+          </li>
+          <!-- </div> -->
         </ul>
         <!-- mobile ver. button -->
         <button type="button" class="mobile-menu-button" data-menu-open>
@@ -105,32 +105,36 @@
                 <a href="" class="mobile-menu__link">Контакти</a>
               </li>
             </ul>
-            <ul class="mobile-menu__contacts-list">
-              <li class="mobile-menu__item">
-                <a href="tel:+380961111111" class="mobile-menu__phone"
-                  >+38 096 111 11 11</a
-                >
-              </li>
-              <li class="mobile-menu__item">
-                <a href="mailto:info@devstudio.com" class="mobile-menu__email"
-                  >info@devstudio.com</a
-                >
-              </li>
-            </ul>
-            <ul class="mobile-menu__social-list">
-              <li class="mobile-menu__social-item">
-                <a href="" class="mobile_menu__social-link">Instagram</a>
-              </li>
-              <li class="mobile-menu__social-item">
-                <a href="" class="mobile_menu__social-link">Twitter</a>
-              </li>
-              <li class="mobile-menu__social-item">
-                <a href="" class="mobile_menu__social-link">Facebook</a>
-              </li>
-              <li class="mobile-menu__social-item">
-                <a href="" class="mobile_menu__social-link">LinkedIn</a>
-              </li>
-            </ul>
+            <div class="mobile-menu__contacts-container">
+              <ul class="mobile-menu__contacts-list">
+                <li class="mobile-menu__item">
+                  <a href="tel:+380961111111" class="mobile-menu__phone"
+                    >+38 096 111 11 11</a
+                  >
+                </li>
+                <li class="mobile-menu__item">
+                  <a href="mailto:info@devstudio.com" class="mobile-menu__email"
+                    >info@devstudio.com</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="mobile-menu__social-container">
+              <ul class="mobile-menu__social-list">
+                <li class="mobile-menu__social-item">
+                  <a href="" class="mobile_menu__social-link">Instagram</a>
+                </li>
+                <li class="mobile-menu__social-item">
+                  <a href="" class="mobile_menu__social-link">Twitter</a>
+                </li>
+                <li class="mobile-menu__social-item">
+                  <a href="" class="mobile_menu__social-link">Facebook</a>
+                </li>
+                <li class="mobile-menu__social-item">
+                  <a href="" class="mobile_menu__social-link">LinkedIn</a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
@@ -328,7 +332,7 @@
                     ./images/team/imgihormobile.webp    1x,
                     ./images/team/imgihormobile@2x.webp 2x
                   "
-                  media="(min-width: 280px)"
+                  media="(max-width: 767px)"
                   type="image/webp"
                 />
                 <source
@@ -336,7 +340,7 @@
                     ./images/team/imgihormobile.jpg    1x,
                     ./images/team/imgihormobile@2x.jpg 2x
                   "
-                  media="(min-width: 280px)"
+                  media="(max-width: 767px)"
                 />
                 <img
                   src="./images/team/imgihormobile.jpg"
@@ -452,7 +456,7 @@
                     ./images/team/imgolhamobile.webp    1x,
                     ./images/team/imgolhamobile@2x.webp 2x
                   "
-                  media="(min-width: 280px)"
+                  media="(max-width: 767px)"
                   type="image/webp"
                 />
                 <source
@@ -460,7 +464,7 @@
                     ./images/team/imgolhamobile.jpg    1x,
                     ./images/team/imgolhamobile@2x.jpg 2x
                   "
-                  media="(min-width: 280px)"
+                  media="(max-width: 767px)"
                 />
                 <img
                   src="./images/team/imgolhamobile.jpg"
@@ -575,7 +579,7 @@
                     ./images/team/imgmykolamobile.webp    1x,
                     ./images/team/imgmykolamobile@2x.webp 2x
                   "
-                  media="(min-width: 280px)"
+                  media="(max-width: 767px)"
                   type="image/webp"
                 />
                 <source
@@ -583,7 +587,7 @@
                     ./images/team/imgmykolamobile.jpg    1x,
                     ./images/team/imgmykolamobile@2x.jpg 2x
                   "
-                  media="(min-width: 280px)"
+                  media="(max-width: 767px)"
                 />
                 <img
                   src="./images/team/imgmykolamobile.jpg"
@@ -698,7 +702,7 @@
                     ./images/team/imgmykhaylomobile.webp    1x,
                     ./images/team/imgmykhaylomobile@2x.webp 2x
                   "
-                  media="(min-width: 280px)"
+                  media="(max-width: 767px)"
                   type="image/webp"
                 />
                 <source
@@ -706,7 +710,7 @@
                     ./images/team/imgmykhaylomobile.jpg    1x,
                     ./images/team/imgmykhaylomobile@2x.jpg 2x
                   "
-                  media="(min-width: 280px)"
+                  media="(max-width: 767px)"
                 />
                 <img
                   src="./images/team/imgmykhaylomobile.jpg"

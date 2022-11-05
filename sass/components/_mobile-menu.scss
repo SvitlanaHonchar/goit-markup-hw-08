@@ -13,9 +13,9 @@
   z-index: 1000;
   background-color: #fff;
 
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
+  // opacity: 0;
+  // visibility: hidden;
+  // pointer-events: none;
 
   @media screen and (min-width: 768px) {
     display: none;
@@ -23,14 +23,14 @@
 }
 
 .mobile-menu.is-open {
-  position: fixed;
-  top: 0;
-  left: 0;
+  // position: fixed;
+  // top: 0;
+  // left: 0;
   transform: translate(0%, 0%);
 
-  opacity: 1;
-  visibility: visible;
-  pointer-events: auto;
+  // opacity: 1;
+  // visibility: visible;
+  // pointer-events: auto;
 }
 
 .mobile-menu__container {
@@ -93,7 +93,7 @@
 }
 
 .mobile-menu__nav {
-  margin-bottom: 306px;
+  // margin-bottom: 306px;
 }
 
 .mobile-menu__contacts-list {
